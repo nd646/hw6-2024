@@ -54,7 +54,7 @@ document.querySelector("#play").addEventListener("click", function() {
 
  document.querySelector("#slider").addEventListener("click", function() {
 	console.log("adjust volume of video")
-	document.querySelector("#volume").innerHTML = document.querySelector("#slider").value
+	document.querySelector("#volume").innerHTML = (document.querySelector("#slider").value + "%")
 	video.volume = document.querySelector("#slider").value / 100
 	console.log("Volume is ", document.querySelector("#slider").value)
  });
